@@ -21,18 +21,18 @@
 
         <div class="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Success Stories</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#featured">Features</a></li>
+                <li><a href="#programed">Courses</a></li>
+                <li><a href="#story">Success Stories</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contacts">Contact</a></li>
             </ul>
         </div>
     </div>
 
     <!-------HOMEPAGE------->
-    <div class="homepage">
+    <div class="homepage" id="home">
         <div class="homeText">
         <h1>
             Advance Your Career with <br> Industry-Leading Online <br> Courses
@@ -49,7 +49,7 @@
     </div>
 
     <!-------FEATURES------->
-    <div class="features">
+    <div class="features" id="featured">
         <h2>The Advantage of Learning With Us</h2>
         <div class="featuresList">
             <div class="list">
@@ -99,7 +99,7 @@
     </div>
 
     <!-------PROGRAMS------->
-    <div class="programs">
+    <div class="programs" id="programed">
         <h2>Professional Career Programs</h2>
         <div class="allprogram">
         <div class="programsList">
@@ -222,7 +222,7 @@
     </div>
 
     <!-------SUCCESS STORIES------->
-    <div class="story">
+    <div class="story" id="story">
         <h2>Success Stories</h2>
         <div class="allstory">
         <div class="story-content">
@@ -241,8 +241,8 @@
             <p><i>The support from the community and the networking opportunities were invaluable in helping me connect with industry professionals.</i></p>
         </div>
     </div>
-
-    <div class="aboutUs">
+    <!-------ABOUT------->
+    <div class="aboutUs" id ="about">
         <h2>About Us</h2>
         <div class="aboutcontent">
         <div class="image2">
@@ -267,6 +267,15 @@
     </div>
 
     <!-------CONTACT US------->
+    <div class="contact" id="contacts">
+        <h2>Contact Us</h2>
+        <form action="#" method="post" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 
 
     <script>

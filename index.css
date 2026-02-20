@@ -409,4 +409,55 @@ body{
         margin: 20px 0 0 0;
         width: 100%;
         max-width: 300px;
+    }
+}
+.contact{
+    background-color: #F3F4F6;
+    padding: 50px 0;
+}
+.contact h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-form{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-form input,
+.contact-form textarea{
+    padding: 15px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contact-form button{
+    background-color: #10B981;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.contact-form button:hover{
+    background-color: #059669;
+}
+/*input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+}*/
+@media (max-width: 768px){
+    .contact-form{
+        padding: 0 20px;
+    }
 }
