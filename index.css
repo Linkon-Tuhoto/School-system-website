@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 h1{
     font-family: 'Poppins', sans-serif;
@@ -121,6 +122,14 @@ body{
         display: block;
     }
 }
+@media (max-width: 1024px){
+    .logo{
+        margin-left: 20px;
+    }
+    .navbar{
+        margin-right: 20px;
+    }
+}
 /* HOME PAGE */
 .homepage{
     display: flex;
@@ -197,6 +206,16 @@ body{
         margin-top: 15px;
     }
 }
+@media (max-width: 1024px){
+    .homeText h1{
+        font-size: 36px;
+    }
+    .image1 img{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
 /*FEATURES*/
 .features{
     background-color: #FFFFFF;
@@ -253,10 +272,19 @@ body{
         transform: translateY(-2px);
     }
 }
+@media (max-width: 1024px){
+    .list h3{
+        font-size: 18px;
+    }
+     .icon{
+        font-size: 80px;
+    }
+}
+/*PROGRAMS*/
 .programs{
-    background-color: #FFFFFF;
+    background-color: #F3F4F6;
     padding: 50px 0;
-    margin: 20px, 7%;
+    margin: 0;
 }
 .programs h2{
     text-align: center;
@@ -297,6 +325,11 @@ body{
     color: #6B7280;
     margin: 15px 0;
 }
+.program-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .price{
     font-size: 18px;
     font-weight: 600;
@@ -323,8 +356,9 @@ body{
         margin-bottom: 20px;
     }
 }
+/* SUCCESS STORIES */
 .story{
-    background-color: #F3F4F6;
+    background-color: #ECFDF5;
     padding: 50px 0;
 }
 .story h2{
@@ -369,6 +403,7 @@ body{
         margin-bottom: 20px;
     }
 }
+/* ABOUT US */
 .aboutUs{
     background-color: #FFFFFF;
     padding: 50px 0;
@@ -376,6 +411,13 @@ body{
 .aboutUs h2{
     text-align: center;
     margin-bottom: 30px;
+}
+.aboutUs p{
+    font-size: 1.125rem;
+    color: #4B5563;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .abouttext{
     max-width: 800px;
@@ -411,8 +453,27 @@ body{
         max-width: 300px;
     }
 }
+@media (max-width: 1024px){
+    .abouttext{
+        font-size: 1rem;
+    }
+    .image2 img{
+        width: 100%;
+        max-width: 400px;
+    }
+}
+@media (max-width: 1200px){
+    .abouttext{
+        font-size: 1rem;
+    }
+    .image2 img{
+        width: 100%;
+        max-width: 500px;
+    }
+}
+/* CONTACT US */
 .contact{
-    background-color: #F3F4F6;
+    background-color: #F0FDF4;
     padding: 50px 0;
 }
 .contact h2{
@@ -446,18 +507,19 @@ body{
 .contact-form button:hover{
     background-color: #059669;
 }
-/*input{
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
-}
-textarea{
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
-}*/
 @media (max-width: 768px){
     .contact-form{
         padding: 0 20px;
     }
+}
+/*FOOTER*/
+.footer{
+    background-color: #1F2937;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: -100%;
+}
+.footer p{
+    font-size: 14px;
 }
