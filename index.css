@@ -11,9 +11,15 @@ body{
     background-color: #F8FAF9;
     font-family: 'Inter', sans-serif;
 }
+/* HEADER */
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #FFFFFF;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #E5E7EB;
@@ -47,18 +53,68 @@ body{
 }
 .navbar li a:hover{
     color: #0F766E;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
     font-size: 0.95rem;
     font-weight: 500;
 }
 .navbar li a.ctive{
     color: #0F766E;
 }
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+    font-size: 28px;
+    color: rgb(226, 13, 13);
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    .menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        width: 100%;
+        background: rgb(255, 254, 254);
+        display: none;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .navbar ul{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar ul li{
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+    }
+    .navbar ul li a{
+        display: block;
+        padding: 15px;
+        color: #1F2937;
+    }
+    .navbar ul li a:hover{
+        background: #f4f4f4;
+        color: #0F766E;
+        transition: 0.3s ease;
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+    #menu-toggle:checked ~ .navbar{
+        display: block;
+    }
+}
+/* HOME PAGE */
 .homepage{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 7%;
+    margin-top: 80px;
     padding-top: 80px;
     padding-bottom: 70px;
     background: linear-gradient(135deg, #14532D, #0F766E);
@@ -108,4 +164,23 @@ body{
 .image1 img{
     border-radius: 20px;
     margin-left: 20px;
+}
+@media (max-width: 768px){
+    .homepage{
+        flex-direction: column;
+        text-align: center;
+    }
+    .homeText h1{
+        font-size: 32px;
+    }
+    .homeText p{
+        font-size: 1rem;
+    }
+    .image1 img{
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+    button{
+        margin-top: 15px;
+    }
 }

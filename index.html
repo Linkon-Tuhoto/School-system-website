@@ -14,6 +14,8 @@
             <img src="img/codegirl.jpg" alt="person">
             <h1>ST, PAUL'S</h1>
         </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
 
         <div class="navbar">
             <ul>
@@ -43,5 +45,43 @@
             <img src="img/student1.jpg" alt="person">
         </div>
     </div>
+
+    <!-------FEATURES------->
+    <div class="features">
+        <h2>The Advantage of Learning With Us</h2>
+        <div class="featuresList">
+            <div class="list">
+                <h3>Industry-Certified Instructors</h3>
+                <p>Learn from experienced professionals with proven expertise
+                    and real-world industry knowledge.
+                </p>
+            </div>
+            <div class="list">
+                <h3>Flexible & Self-Paced Learning</h3>
+                <p>Access your courses anytime, anywhere, and learn at a pace
+                    that fits your schedule.
+                </p>
+            </div>
+            <div class="list">
+                <h3>Certification</h3>
+                <p>Earn industry-recognized certificates that enhance your
+                    credibility and career opportunities.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    const navLinks = document.querySelectorAll(".navbar a");
+    const menuToggle = document.getElementById("menu-toggle");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            menuToggle.checked = false;
+        });
+    });
+</script>
+
 </body>
 </html>
