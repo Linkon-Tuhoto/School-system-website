@@ -2,9 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background-color: #F8FAF9;
+    font-family: 'Inter', sans-serif;
 }
 .header{
     background-color: #FFFFFF;
@@ -18,6 +23,8 @@ body{
     display: flex;
     align-items: center;
     margin-left: 5%;
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 .logo img{
     width: 50px;
@@ -40,7 +47,65 @@ body{
 }
 .navbar li a:hover{
     color: #0F766E;
+    transition: 0.3 ease;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 .navbar li a.ctive{
     color: #0F766E;
+}
+.homepage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    background: linear-gradient(135deg, #14532D, #0F766E);
+}
+.homeText h1{
+    font-size: 48px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.homeText p{
+    font-size: 1.125rem;
+    color: #D1FAE5;
+    margin-bottom: 30px;
+}
+.start{
+    background-color: #10B981;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
+.start:hover{
+    background-color: #059669;
+    transition: 0.3s ease;
+}
+.explore{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 13px 28px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.explore:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+.image1 img{
+    border-radius: 20px;
+    margin-left: 20px;
 }
