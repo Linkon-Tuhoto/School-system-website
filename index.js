@@ -35,3 +35,14 @@ const observer = new IntersectionObserver((entries), () => {
 }, {threshold: 0.2 });
 document.querySelectorAll(".hidden-left, .hidden-right").forEach(el => observer.observe(el));
 });*/
+
+const enrolling = document.getElementById("enroll-sign");
+const signed = document.getElementById("sign");
+const close = document.querySelector(".sign-close");
+
+enrolling.addEventListener("click", () => {
+    signed.style.display = "flex";
+});
+close.addEventListener("click", () => {
+    signed.style.display ="none";
+});
