@@ -36,13 +36,23 @@ const observer = new IntersectionObserver((entries), () => {
 document.querySelectorAll(".hidden-left, .hidden-right").forEach(el => observer.observe(el));
 });*/
 
-const enrolling = document.getElementById("enroll-sign");
-const signed = document.getElementById("sign");
-const close = document.querySelector(".sign-close");
+document.addEventListener("DOMContentLoaded", function() {
 
-enrolling.addEventListener("click", () => {
-    signed.style.display = "flex";
-});
-close.addEventListener("click", () => {
-    signed.style.display ="none";
+    const buttons = document.querySelectorAll(".enroll-sign");
+    const modal = document.getElementById("sign");
+    const closeBtn = document.querySelector(".sign-close");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+            console.log("Clicked");   // DEBUG TEST
+            modal.style.display = "flex";
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    });
+
 });
