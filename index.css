@@ -616,10 +616,17 @@ body{
 .footer{
     background-color: #1F2937;
     color: #FFFFFF;
-    text-align: center;
-    padding: 20px 0;
-    margin-bottom: -100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .footer p{
     font-size: 14px;
+}
+.navbar2 li{
+    list-style: none;
+}
+.navbar2 li a{
+    color: #E5E7EB;
+    text-decoration: none;
 }
