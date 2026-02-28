@@ -620,6 +620,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 30px;
+    padding-bottom: 50px;
 }
 .footer p{
     font-size: 14px;
@@ -639,10 +640,12 @@ body{
 .linkings h3{
     font-size: 25px;
     color: #10B981;
+    margin-top: 20px;
 }
 .contactings h3{
     color: #10B981;
     font-size: 25px;
+    margin-top: 20px;
 }
 .icons h3{
     font-size: 25px;
@@ -660,4 +663,12 @@ body{
         flex-direction: column;
         align-items: center;
     }
+}
+.rights{
+    background-color: #1F2937;
+    margin-top: 1px;
+    margin-bottom: 0;
+    padding: 20px;
+    padding-bottom: 15px;
+    text-align: center;
 }
