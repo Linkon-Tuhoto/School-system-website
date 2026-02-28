@@ -632,3 +632,32 @@ body{
     color: #E5E7EB;
     text-decoration: none;
 }
+.navbar2 li a:hover{
+    text-decoration: line-through;
+    color: #E5E7ED;
+}
+.linkings h3{
+    font-size: 25px;
+    color: #10B981;
+}
+.contactings h3{
+    color: #10B981;
+    font-size: 25px;
+}
+.icons h3{
+    font-size: 25px;
+    color: #10B981;
+}
+.socialMedia i{
+    color: #FFFFFF;
+}
+.contactings p{
+    color: #D1FAE5;
+}
+@media (max-width: 768px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
