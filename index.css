@@ -31,7 +31,7 @@ body{
     left: 0;
     right: 0;
     z-index: 1200;
-    background-color: #FFFFFF;
+    background-color: #0B5D1E;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -62,7 +62,7 @@ body{
     list-style: none;
 }
 .navbar li a{
-    color: #1F2937;
+    color: #FFFFFF;
     text-decoration: none;
 }
 .navbar li a:hover{
@@ -84,6 +84,15 @@ body{
     height: 2px;
     background: #0F766E;
 }
+.header a{
+    color: #FFFFFF;
+}
+.header.scrolled{
+    background: #FFFFFF;
+}
+.header.scrolled a{
+    color: #1F2937;
+}
 #menu-toggle{
     display: none;
 }
@@ -91,8 +100,11 @@ body{
 .menu-icon{
     display: none;
     font-size: 28px;
-    color: rgb(226, 13, 13);
+    color: #FFFFFF;
     cursor: pointer;
+}
+.header.scrolled .menu-icon{
+    color: #0B5D1E;
 }
 @media (max-width: 768px){
     .menu-icon{
