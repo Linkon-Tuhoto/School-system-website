@@ -153,7 +153,7 @@ body{
     }
 }
 /*ANIMATIONS*/
-.hidden{
+/*.hidden{
     opacity: 0;
     transform: translateX(-100px);
     animation: slide 1s ease;
@@ -161,6 +161,15 @@ body{
 .show {
     opacity: 0;
     transform: translateX(0);
+}*/
+.reveal{
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s ease;
+}
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
 }
 /*SIGN UP PROMPT*/
 .signing{
