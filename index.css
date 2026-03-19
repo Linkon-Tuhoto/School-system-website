@@ -674,9 +674,20 @@ body{
 }
 .socialMedia i{
     color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+.socialMedia i:hover{
+    transform: scaleX(1.5);
+    color: #a8a5a5;
 }
 .contactings p{
     color: #D1FAE5;
+}
+.contactings p a{
+    color: #D1FAE5;
+}
+.contactings p a:hover{
+    color: #dff5e6;
 }
 @media (max-width: 768px){
     .footer{
